@@ -23,6 +23,10 @@ def get_number_of_racers():
             print('Number not in range 2-10. Try Again!')
 
 
+def create_turtle(colors):
+    turtles = []
+
+
 def init_turtle():
     screen = turtle.Screen()
     screen.setup(WIDTH, HEIGHT)
@@ -33,3 +37,4 @@ def init_turtle():
 racers = get_number_of_racers()
 init_turtle()
 random.shuffle(COLORS)
+colors = COLORS[:racers]
